@@ -1,4 +1,4 @@
-package ir.amin.dong.common
+package ir.aminkeshavarzian.dong.common
 
 import androidx.compose.desktop.ui.tooling.preview.Preview
 import androidx.compose.runtime.Composable

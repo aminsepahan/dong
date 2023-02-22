@@ -1,4 +1,4 @@
-package ir.amin.dong.common
+package ir.aminkeshavarzian.dong.common
 
 import androidx.compose.material.Text
 import androidx.compose.material.Button

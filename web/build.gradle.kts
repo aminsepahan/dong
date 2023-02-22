@@ -5,7 +5,7 @@ plugins {
     id("org.jetbrains.compose") version Versions.composeDesktopWeb
 }
 
-group = "ir.amin.dong"
+group = "ir.aminkeshavarzian.dong"
 version = "0.1"
 
 repositories {

@@ -1,6 +1,6 @@
-package ir.amin.dong.android
+package ir.aminkeshavarzian.dong.android
 
-import ir.amin.dong.common.App
+import ir.aminkeshavarzian.dong.common.App
 import android.os.Bundle
 import androidx.activity.compose.setContent
 import androidx.appcompat.app.AppCompatActivity

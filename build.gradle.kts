@@ -1,5 +1,5 @@
 
-group = "ir.amin.dong"
+group = "ir.aminkeshavarzian.dong"
 version = "0.1"
 
 buildscript {

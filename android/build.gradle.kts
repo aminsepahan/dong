@@ -4,7 +4,7 @@ plugins {
     kotlin("android")
 }
 
-group = "ir.amin.dong"
+group = "ir.aminkeshavarzian.dong"
 version = "0.1"
 
 repositories {
@@ -19,7 +19,7 @@ dependencies {
 android {
     compileSdk = 33
     defaultConfig {
-        applicationId = "ir.amin.dong.android"
+        applicationId = "ir.aminkeshavarzian.dong.android"
         minSdk = 24
         targetSdk = 33
         versionCode = 1

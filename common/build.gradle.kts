@@ -6,7 +6,7 @@ plugins {
     id("com.android.library")
 }
 
-group = "ir.amin.dong"
+group = "ir.aminkeshavarzian.dong"
 version = "1.0-SNAPSHOT"
 
 kotlin {
