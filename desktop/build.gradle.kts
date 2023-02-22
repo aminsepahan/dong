@@ -1,4 +1,3 @@
-import org.jetbrains.compose.compose
 import org.jetbrains.compose.desktop.application.dsl.TargetFormat
 
 plugins {
@@ -7,7 +6,7 @@ plugins {
 }
 
 group = "ir.amin.dong"
-version = "1.0-SNAPSHOT"
+version = "0.1"
 
 
 kotlin {
@@ -16,12 +15,14 @@ kotlin {
         withJava()
     }
     sourceSets {
+        @Suppress("UNUSED_VARIABLE")
         val jvmMain by getting {
             dependencies {
                 implementation(project(":common"))
                 implementation(compose.desktop.currentOs)
             }
         }
+        @Suppress("UNUSED_VARIABLE")
         val jvmTest by getting
     }
 }

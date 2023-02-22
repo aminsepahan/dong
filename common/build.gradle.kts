@@ -1,4 +1,4 @@
-import org.jetbrains.compose.compose
+@file:Suppress("UNUSED_VARIABLE")
 
 plugins {
     kotlin("multiplatform")
@@ -13,6 +13,10 @@ kotlin {
     android()
     jvm("desktop") {
         jvmToolchain(11)
+    }
+    js(IR) {
+        useCommonJs()
+        browser()
     }
     sourceSets {
         val commonMain by getting {
@@ -44,6 +48,15 @@ kotlin {
             }
         }
         val desktopTest by getting
+
+
+        val jsMain by getting {
+
+            dependencies {
+                implementation(Deps.Ktor.clientJs)
+            }
+        }
+
     }
 }
 
@@ -52,11 +65,18 @@ android {
     sourceSets["main"].manifest.srcFile("src/androidMain/AndroidManifest.xml")
     defaultConfig {
         minSdk = 24
-        @Suppress("UnstableApiUsage")
-        targetSdk = 33
     }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
+    }
+}
+
+// a temporary workaround for a bug in jsRun invocation - see https://youtrack.jetbrains.com/issue/KT-48273
+afterEvaluate {
+    rootProject.extensions.configure<org.jetbrains.kotlin.gradle.targets.js.nodejs.NodeJsRootExtension> {
+        nodeVersion = "16.0.0"
+        versions.webpackDevServer.version = "4.0.0"
+        versions.webpackCli.version = "4.10.0"
     }
 }

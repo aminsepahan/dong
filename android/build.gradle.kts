@@ -4,8 +4,8 @@ plugins {
     kotlin("android")
 }
 
-group "ir.amin.dong"
-version "1.0-SNAPSHOT"
+group = "ir.amin.dong"
+version = "0.1"
 
 repositories {
     mavenCentral()
@@ -31,6 +31,7 @@ android {
     }
     buildTypes {
         getByName("release") {
+            @Suppress("UnstableApiUsage")
             isMinifyEnabled = false
         }
     }
