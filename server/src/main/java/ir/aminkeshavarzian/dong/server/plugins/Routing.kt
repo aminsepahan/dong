@@ -1,4 +1,4 @@
-package ir.aminkeshavarzian.dong.server
+package ir.aminkeshavarzian.dong.server.plugins
 
 import io.ktor.serialization.kotlinx.json.*
 import io.ktor.server.application.*
