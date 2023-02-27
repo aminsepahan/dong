@@ -1,3 +1,4 @@
+import Deps.Koin.android
 
 group = "ir.aminkeshavarzian.dong"
 version = "0.1"

@@ -28,6 +28,8 @@ dependencies {
     implementation("io.ktor:ktor-serialization:$ktorVersion")
     implementation("io.ktor:ktor-serialization-kotlinx-json:$ktorVersion")
     implementation("io.ktor:ktor-server-call-logging:$ktorVersion")
+    implementation("io.ktor:ktor-server-html-builder:$ktorVersion")
+    implementation("org.jetbrains.kotlin-wrappers:kotlin-css:1.0.0-pre.473")
     implementation("io.ktor:ktor-server-tests:2.2.2")
     implementation("ch.qos.logback:logback-classic:1.2.11")
     implementation("org.jetbrains.kotlin:kotlin-test:1.8.0")
@@ -35,6 +37,9 @@ dependencies {
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.4.1")
     implementation("io.insert-koin:koin-ktor:$koinKtorVersion")
     implementation("io.insert-koin:koin-logger-slf4j:$koinKtorVersion")
+
+    //html and templating
+    implementation("io.ktor:ktor-server-freemarker:$ktorVersion")
 
     //database
     implementation("org.jetbrains.exposed:exposed-core:$exposedVersion")

@@ -1,0 +1,32 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+.wrapper {
+	display: grid;
+	place-items: center;
+	height: 100vh;
+}
+.wrapper img {
+	width: 30%;
+}
+body {
+	margin: 50;
+	background: url("banana_close.png") repeat 0 0;
+	animation: animate 15s infinite;
+	animation-timing-function: linear;
+}
+@keyframes animate {
+	100% {
+		background-position: 120px 120px;
+	}
+}
+
+#example1 {
+  margin 50;
+  border-radius: 25px;
+  border: 2px solid #fcba03;
+  padding: 15px;
+  background: #ffffff;
+  background-clip: border-box;
+}
